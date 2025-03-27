@@ -52,3 +52,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['admin/chuyen-muc'] = 'Admin/ChuyenMuc';
+$route['admin/chuyen-muc/(:any)/trang'] = 'Admin/ChuyenMuc/page/$1';
+$route['admin/chuyen-muc/them'] = 'Admin/ChuyenMuc/add';
+$route['admin/chuyen-muc/(:any)/sua'] = 'Admin/ChuyenMuc/update/$1';
+$route['admin/chuyen-muc/(:any)/xoa'] = 'Admin/ChuyenMuc/delete/$1';
+
+$route['chuyen-muc'] = 'Web/ChuyenMuc/index';
+$route['chuyen-muc/(:any)'] = 'Web/ChuyenMuc/detail/$1';
+$route['chuyen-muc/trang/(:any)'] = 'Web/ChuyenMuc/page/$1';
+$route['chuyen-muc/(:any)/trang/(:any)'] = 'Web/ChuyenMuc/detailPage/$1/$2';
+
+$route['admin/san-pham'] = 'Admin/SanPham';
+$route['admin/san-pham/(:any)/trang'] = 'Admin/SanPham/page/$1';
+$route['admin/san-pham/them'] = 'Admin/SanPham/add';
+$route['admin/san-pham/(:any)/sua'] = 'Admin/SanPham/update/$1';
+$route['admin/san-pham/(:any)/xoa'] = 'Admin/SanPham/delete/$1';
+$route['admin/san-pham/(:any)/nhap'] = 'Admin/SanPham/import/$1';
+$route['admin/san-pham/(:any)/lich-su'] = 'Admin/SanPham/history/$1';
