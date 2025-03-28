@@ -71,3 +71,27 @@ $route['admin/san-pham/(:any)/sua'] = 'Admin/SanPham/update/$1';
 $route['admin/san-pham/(:any)/xoa'] = 'Admin/SanPham/delete/$1';
 $route['admin/san-pham/(:any)/nhap'] = 'Admin/SanPham/import/$1';
 $route['admin/san-pham/(:any)/lich-su'] = 'Admin/SanPham/history/$1';
+
+$route['admin/dang-nhap'] = 'Admin/DangNhap/index';
+$route['admin/dang-xuat'] = 'Admin/DangXuat/index';
+
+$route['admin/khach-hang'] = 'Admin/KhachHang';
+$route['admin/khach-hang/(:any)/trang'] = 'Admin/KhachHang/page/$1';
+$route['admin/khach-hang/(:any)/xem'] = 'Admin/KhachHang/view/$1';
+$route['admin/khach-hang/(:any)/trang-thai'] = 'Admin/KhachHang/status/$1';
+
+$route['admin/ca-nhan'] = 'Admin/CaNhan';
+
+$route['admin/nhan-vien'] = 'Admin/NhanVien';
+$route['admin/nhan-vien/(:any)/trang'] = 'Admin/NhanVien/page/$1';
+$route['admin/nhan-vien/them'] = 'Admin/NhanVien/add';
+$route['admin/nhan-vien/(:any)/sua'] = 'Admin/NhanVien/update/$1';
+$route['admin/nhan-vien/(:any)/xoa'] = 'Admin/NhanVien/delete/$1';
+
+$route['lien-he'] = 'Web/LienHe';
+$route['dang-nhap'] = 'Web/DangNhap';
+$route['dang-xuat'] = 'Web/DangXuat';
+$route['dang-ky'] = 'Web/DangNhap/register';
+
+$route['khach-hang'] = 'Web/KhachHang';
+$route['khach-hang/sua'] = 'Web/KhachHang/update';
